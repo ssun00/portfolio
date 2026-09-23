@@ -1,0 +1,115 @@
+.paw-fab {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    z-index: 500;
+    width: 46px;
+    height: 46px;
+    background: var(--surface);
+    border: 2px solid var(--pink);
+    color: var(--pink);
+    cursor: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: paw-float 2.6s ease-in-out infinite;
+    transition: box-shadow 0.15s, color 0.15s;
+}
+
+.paw-fab:hover {
+    color: var(--pink-soft);
+    box-shadow: 0 0 14px rgba(255, 46, 136, 0.7);
+}
+
+@keyframes paw-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+.paw-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9500;
+    background: rgba(10, 10, 15, 0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    animation: paw-fade 0.2s ease-out;
+}
+
+@keyframes paw-fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.paw-modal__card {
+    position: relative;
+    max-width: min(90vw, 420px);
+    width: 100%;
+    background: var(--surface);
+    border: 3px solid var(--pink);
+    padding: 18px;
+    box-shadow: 0 0 24px rgba(255, 46, 136, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.paw-modal__close {
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    width: 28px;
+    height: 28px;
+    background: var(--pink);
+    color: var(--bg);
+    border: 2px solid var(--bg);
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    cursor: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.paw-modal__frame {
+    width: 100%;
+    aspect-ratio: 1;
+    background: var(--bg);
+    border: 2px solid var(--pink-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.paw-modal__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.paw-modal__caption {
+    font-family: var(--font-display);
+    font-size: 0.6875rem;
+    letter-spacing: 1px;
+    color: var(--pink-soft);
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .paw-fab {
+        bottom: 16px;
+        left: 16px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .paw-fab svg {
+        width: 18px;
+        height: 18px;
+    }
+}
