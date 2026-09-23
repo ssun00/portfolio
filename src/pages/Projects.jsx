@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { PROJECTS, CATEGORIES } from '../data/Projects';
 import ProjectCard from '../components/ProjectCard';
 import ProjectFilters from '../components/ProjectFilters';
-import useEscapeKey from '../hooks/UseEscapeKey';
+import useEscapeKey from "../hooks/useEscapeKey";
 import { useSound } from '../context/SoundContext';
 
 export default function Projects() {

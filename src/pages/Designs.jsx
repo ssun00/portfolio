@@ -7,7 +7,7 @@ import ProjectFilters from '../components/ProjectFilters';
 import InventorySlot, { EmptySlot } from '../components/InventorySlot';
 import DesignDetail from '../components/DesignDetail';
 import Lightbox from '../components/Lightbox';
-import useEscapeKey from '../hooks/UseEscapeKey';
+import useEscapeKey from '../hooks/useEscapeKey';
 import { useSound } from '../context/SoundContext';
 
 const GRID_COLS = 4;

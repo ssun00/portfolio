@@ -3,7 +3,7 @@ import '../styles/project-detail.css'
 import { useNavigate, useParams } from "react-router-dom";
 import { useMemo, useCallback, useEffect } from "react";
 import { PROJECTS } from "../data/Projects";
-import useEscapeKey from '../hooks/UseEscapeKey';
+import useEscapeKey from '../hooks/useEscapeKey';
 import useKeyPress from '../hooks/useKeyPress';
 import ScreenshotGallery from '../components/ScreenshotGallery';
 

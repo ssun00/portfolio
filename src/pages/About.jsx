@@ -6,7 +6,7 @@ import CharacterInfo from '../components/CharacterInfo';
 import StatBars from '../components/StatsBars';
 import EquippedTags from '../components/EquippedTags';
 import QuestLog from '../components/QuestLog';
-import useEscapeKey from '../hooks/UseEscapeKey';
+import useEscapeKey from '../hooks/useEscapeKey';
 import { useSound } from '../context/SoundContext';
 
 function DialogueBox({ name, paragraphs }) {
